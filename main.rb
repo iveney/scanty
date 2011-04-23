@@ -9,12 +9,12 @@ configure do
 
 	require 'ostruct'
 	Blog = OpenStruct.new(
-		:title => 'a scanty blog',
-		:author => 'John Doe',
+		:title => "Kirklander's Blog",
+		:author => 'Robert Kaufman',
 		:url_base => 'http://localhost:4567/',
-		:admin_password => 'changeme',
-		:admin_cookie_key => 'scanty_admin',
-		:admin_cookie_value => '51d6d976913ace58',
+		:admin_password => 'dare',
+		:admin_cookie_key => 'scanty_blog_admin',
+		:admin_cookie_value => '34a3fafa26c8f218f8ad3bd368a54cb08e701bbb',
 		:disqus_shortname => nil
 	)
 end
@@ -122,4 +122,3 @@ post '/past/:year/:month/:day/:slug/' do
 	post.save
 	redirect post.url
 end
-
