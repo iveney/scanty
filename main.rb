@@ -9,8 +9,8 @@ configure do
 
 	require 'ostruct'
 	Blog = OpenStruct.new(
-		:title => "Kirklander's Blog",
-		:author => 'Robert Kaufman',
+		:title => "Random Walk in a Random World",
+		:author => 'Ivan Z. Siu',
 		:url_base => 'http://localhost:4567/',
 		:admin_password => 'iloveyou',
 		:admin_cookie_key => 'aBzftYnmK',
